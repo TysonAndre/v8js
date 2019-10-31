@@ -32,6 +32,10 @@ extern "C" {
 #include "zend_generators.h"
 }
 
+#ifndef ZEND_ACC_CLONE
+#define ZEND_ACC_CLONE 0
+#endif
+
 static void v8js_weak_object_callback(const v8::WeakCallbackInfo<zend_object> &data);
 
 /* Callback for PHP methods and functions */

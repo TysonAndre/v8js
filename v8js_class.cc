@@ -36,6 +36,10 @@ extern "C" {
 #include "zend_exceptions.h"
 }
 
+#ifndef ZEND_ACC_CLONE
+#define ZEND_ACC_CLONE 0
+#endif
+
 #define PHP_V8JS_SCRIPT_RES_NAME "V8Js script"
 
 /* {{{ Class Entries */
